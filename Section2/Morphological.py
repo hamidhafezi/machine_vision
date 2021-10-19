@@ -19,7 +19,7 @@ def displayImg(img):
 img = loadImg()
 displayImg(img)
 
-# Erosion: romving foreground and the background is expanded
+# Erosion: romving foreground, and the background is expanded
 kernal = np.ones((5,5),dtype=np.uint8)
 rst = cv2.erode(img,kernal,iterations=3)
 displayImg(rst)
