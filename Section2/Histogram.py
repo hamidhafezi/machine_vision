@@ -71,5 +71,11 @@ plt.show()
 # now we are going to equalized the gorilla image:
 eqGorilla = cv2.equalizeHist(gorilla)
 imgshow(eqGorilla)
+histeqGorilla = cv2.calcHist([eqGorilla],channels=[0],mask=None
+,histSize=[256],ranges=[0,256])
+plt.plot(histeqGorilla)
+plt.show()
 
+# For colored image first we have to convert rgb to hsv color format.
+# Also we should equalize the image for one of the chanals
 
